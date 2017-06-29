@@ -15,9 +15,9 @@ public class ConnectMsSql {
         	
         	  DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
             String dbURL = "jdbc:sqlserver://localhost;integratedSecurity=true;";
-            String user = "un";
-            String pass = "secret";
-            conn = DriverManager.getConnection(dbURL, user, pass);
+           // String user = "un";
+           // String pass = "secret";
+            conn = DriverManager.getConnection(dbURL);
             if (conn != null) {
                 DatabaseMetaData dm = (DatabaseMetaData) conn.getMetaData();
                 System.out.println("Driver name: " + dm.getDriverName());
