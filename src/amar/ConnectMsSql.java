@@ -17,6 +17,7 @@ public class ConnectMsSql {
             String dbURL = "jdbc:sqlserver://localhost;integratedSecurity=true;";
            // String user = "un";
            // String pass = "secret";
+            //Amar
             conn = DriverManager.getConnection(dbURL);
             if (conn != null) {
                 DatabaseMetaData dm = (DatabaseMetaData) conn.getMetaData();
